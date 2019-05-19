@@ -48,7 +48,7 @@ class ArticleList extends Component {
                             <img
                                 width={272}
                                 alt={item.title}
-                                src={item.picture}
+                                src={"/api/image/" + item.picture}
                             />
                         }
                     >

@@ -77,7 +77,7 @@ class BookList extends Component {
     }
 
     render(){
-        return <div style={{ width: '1000px', marginLeft: 'auto', marginRight:'auto', marginTop: 0, marginBottom: 50, background: '#ffffff' }}>
+        return <div style={{ marginLeft: '250px', marginRight:'200px', minWidth: 500, marginTop: 0, marginBottom: 50, background: '#ffffff', boxShadow:'2px 2px 30px #ccc' }}>
             {
                 this.state.items.length > 0 ?<Menu
                     style={{

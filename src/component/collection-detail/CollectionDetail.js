@@ -27,7 +27,7 @@ class CollectionDetail extends Component {
     }
 
     render(){
-        return <div style={{ width: '1000px', marginLeft: 'auto', marginRight:'auto', marginTop: 0, marginBottom: 50, background: '#ffffff' }}>
+        return <div style={{ marginLeft: '200px', marginRight:'200px', minWidth: 500, marginTop: 0, marginBottom: 50, background: '#ffffff', boxShadow:'2px 2px 30px #ccc' }}>
             <List
                 itemLayout="vertical"
                 size="large"
@@ -46,6 +46,7 @@ class CollectionDetail extends Component {
                         extra={
                             <img
                                 width={272}
+                                style={{maxHeight: 150}}
                                 alt={item.title}
                                 src={"/api/image/" + item.picture}
                             />

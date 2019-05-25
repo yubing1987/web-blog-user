@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {List} from 'antd';
 import ArticleApi from "../../server/ArticleApi";
 
 import marked from 'marked';
@@ -26,7 +25,7 @@ class ArticleDetail extends Component {
     }
 
     render(){
-        return <div style={{ width: '1000px', marginLeft: 'auto', marginRight:'auto', marginTop: 0, marginBottom: 50, background: '#ffffff', boxShadow:'2px 2px 30px #ccc' }}>
+        return <div style={{ marginLeft: '200px', marginRight:'200px', minWidth: 500, marginTop: 0, marginBottom: 50, background: '#ffffff', boxShadow:'2px 2px 30px #ccc' }}>
             <div className="article-title">{this.state.article.title}</div>
             <div
                 style={{'padding': '20px 40px'}}

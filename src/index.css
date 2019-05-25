@@ -22,6 +22,28 @@ body {
   float: left;
 }
 
+.qr-code-view{
+  position: fixed;
+  right: 40px;
+  top: 100px;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 2px 2px 30px #ccc;
+}
+
+.qr-code-header{
+  padding: 10px 0 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.qr-code-title{
+  text-align: center;
+  font-size: 10px;
+  color: #ccc;
+}
+
 /*对 markdown 样式的补充*/
 pre {
   display: block;
@@ -82,9 +104,22 @@ p img{
   color: #009a61;
 }
 
+#content img{
+  max-width: 100%;
+  min-width: 40%;
+}
+
 .article-title{
   text-align: center;
   padding: 10px;
   font-size: 40px;
   font-weight: bold;
+}
+
+blockquote{
+  border-left: 3px solid #888;
+  padding-left: 10px;
+  background: #eee;
+  color: #888;
+  margin-left: 10px;
 }

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {NavLink, Redirect, Route} from 'react-router-dom'
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu } from 'antd';
 import ArticleList from "../article-list/ArticleList";
 import BookList from "../book-list/BookList";
 import CollectionList from "../collection-list/CollectionList";
@@ -8,7 +8,7 @@ import ArticleDetail from "../article-detail/ArticleDetail";
 import BookDetail from "../book-detail/BookDetail";
 import CollectionDetail from "../collection-detail/CollectionDetail";
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content } = Layout;
 
 class Home extends Component {
 
@@ -27,7 +27,7 @@ class Home extends Component {
                     startKey: "/book"
                 },
                 {
-                    name: "专辑",
+                    name: "专题",
                     link: "/collection/list",
                     startKey: "/collection"
                 }
@@ -71,6 +71,17 @@ class Home extends Component {
                     <Route path="/collection/detail/:id" component={CollectionDetail}/>
                 </div>
             </Content>
+            <div className="qr-code-view">
+                <div className="qr-code-header">扫码关注</div>
+                <div>
+                    <div class="qr-code-title">头条号</div>
+                    <img alt={"头条号"} src={'http://java-code.net/img/toutiao.jpeg'} width={150}/>
+                </div>
+                <div style={{marginTop: 10}}>
+                    <div class="qr-code-title">微信公众号</div>
+                    <img alt={"微信号"} src={'http://java-code.net/img/weixin.jpg'} width={150}/>
+                </div>
+            </div>
         </Layout>
     }
 }

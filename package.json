@@ -6,7 +6,7 @@
     "antd": "^3.13.4",
     "highlight.js": "^9.15.6",
     "lodash": "^4.17.11",
-    "marked": "^0.6.2",
+    "marked": "^1.1.1",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-markdown": "^4.0.6",
